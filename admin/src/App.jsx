@@ -1,3 +1,5 @@
+import { RouterProvider, createBrowserRouter } from "react-router";
+
 import {
   About,
   Cart,
@@ -11,6 +13,13 @@ import {
   Register,
   SingleProduct,
 } from "./pages";
+
+const router = createBrowserRouter([
+  {
+    path: '/'
+  }
+])
+
 const App = () => {
   return <div></div>;
 };
