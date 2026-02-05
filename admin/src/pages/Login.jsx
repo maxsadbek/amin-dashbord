@@ -1,10 +1,8 @@
-import React from 'react'
-
 const Login = () => {
   return (
-    <div>
-
-    </div>
+    <section className="h-screen grid place-items-center">
+      Log In
+    </section>
   )
 }
 

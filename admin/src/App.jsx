@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter } from "react-router";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import {
   About,
@@ -69,10 +69,12 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
-  <QueryClientProvider client={queryClient}>
-    <RouterProvider router={router}/>
-    <ReactQueryDevtools />
-  </QueryClientProvider>;
+  return (
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />
+      <ReactQueryDevtools />
+    </QueryClientProvider>
+  );
 };
 
 export default App;
