@@ -1,9 +1,7 @@
-import React from 'react'
-
 const HomeLayout = () => {
   return (
-    <div>
-
+    <div className='flex items-center justify-center'>
+      Home Layout
     </div>
   )
 }

@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const Sumbit = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const Sumbit = ({ text, Bgcolor, textColor }) => {
+  return <button className={`${(Bgcolor, textColor)}`}>{text}</button>;
+};
 
-export default Sumbit
+export default Sumbit;

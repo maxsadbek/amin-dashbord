@@ -13,8 +13,10 @@ import {
   Register,
   SingleProduct,
 } from "./pages";
-import { QueryClientProvider } from "@tanstack/react-query";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+
+const queryClient = new QueryClient();
 
 const router = createBrowserRouter([
   {
@@ -67,8 +69,8 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
-  <QueryClientProvider>
-    <RouterProvider />
+  <QueryClientProvider client={queryClient}>
+    <RouterProvider router={router}/>
     <ReactQueryDevtools />
   </QueryClientProvider>;
 };

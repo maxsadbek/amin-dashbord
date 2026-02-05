@@ -1,7 +1,7 @@
-import React from "react";
+import { Form } from "react-router-dom";
 
-const FomrInput = ({ text, Bgcolor, textColor  }) => {
-  return <button className={`${Bgcolor, textColor}`}>{text}</button>;
+const FomrInput = () => {
+  return <Form></Form>;
 };
 
 export default FomrInput;
