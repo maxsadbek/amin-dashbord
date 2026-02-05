@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router";
 
 import {
   About,
@@ -76,5 +76,6 @@ const App = () => {
     </QueryClientProvider>
   );
 };
+
 
 export default App;
